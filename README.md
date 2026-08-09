@@ -6,6 +6,8 @@ Cross-platform desktop app (macOS, Windows, Linux) with auto-update. **[Download
 
 > This repository hosts releases and documentation. STORMCAST is a commercial product and the application source is private. What follows is the engineering, in as much detail as I can give without handing over the strategy.
 
+![STORMCAST dashboard](docs/dashboard.jpg)
+
 ---
 
 ## The idea
@@ -25,6 +27,16 @@ What the model actually produced was a spread of possible outcomes. The ECMWF en
 - **Paper trading with full P&L tracking** and **calibration analytics**: when the model said 70%, did it happen about 70% of the time?
 - Push notifications on high-confidence signals
 - Wallet connection for balance display
+
+## Screens
+
+**Markets.** Every tracked station broken into temperature bins, with the model's best expected value, a confidence tier, and available liquidity per market.
+
+![Markets view](docs/markets.jpg)
+
+**Trading.** Signals ranked by edge, with confidence scores and Kelly-derived position sizes. Paper mode is the default, and auto-trading runs on a fixed scan interval.
+
+![Trading view](docs/trading.jpg)
 
 ## Architecture
 
